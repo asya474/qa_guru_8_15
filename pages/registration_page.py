@@ -5,7 +5,7 @@ import resources
 
 class RegistrationPage:
     def open(self):
-        browser.open('/automation-practice-form')
+        browser.open('https://demoqa.com/automation-practice-form')
 
     def register(self, user):
         browser.all('.custom-checkbox').element_by(have.exact_text(user.hobbie)).click()
