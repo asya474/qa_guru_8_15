@@ -3,7 +3,7 @@ from data.users import User
 
 
 
-def test_registration_form(setup_browser):
+def test_registration_form(browser_manage):
     with allure.step("User data"):
         user = User('Test',
                     'Test',
