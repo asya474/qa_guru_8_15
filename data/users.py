@@ -8,9 +8,9 @@ class User:
     email: str
     gender: str
     phone_number: str
-    month_of_brith: str
-    year_of_brith: str
-    day_of_brith: str
+    year_of_birth: str
+    month_of_birth: str
+    day_of_birth: str
     subject: str
     hobby: str
     picture: str
