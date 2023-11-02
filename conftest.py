@@ -25,8 +25,8 @@ def setup_browser(request):
     )
 
     browser.config.driver = driver
-    browser.config.window_width = 700
-    browser.config.window_height = 1024
+    browser.config.window_width = 600
+    browser.config.window_height = 900
     yield browser
 
     attach.add_screenshot(browser)
