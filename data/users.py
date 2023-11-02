@@ -12,8 +12,8 @@ class User:
     month_of_birth: str
     day_of_birth: str
     subject: str
-    hobby: str
-    picture: str
-    current_address: str
+    hobbie: str
+    image: str
+    address: str
     state: str
     city: str
