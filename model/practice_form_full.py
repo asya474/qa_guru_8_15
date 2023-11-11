@@ -1,5 +1,4 @@
 from selene import browser, be, have, command
-import os
 from data import image
 
 
