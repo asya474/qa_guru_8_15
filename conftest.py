@@ -22,9 +22,9 @@ def setup_browser(request):
     driver = webdriver.Remote(command_executor=f"https://user1:1234@selenoid.autotests.cloud/wd/hub", options=options)
     browser.config.base_url = "https://demoqa.com"
     browser.config.driver = driver
-    browser.config.timeout = 2.0
-    browser.config.window_width = 1920
-    browser.config.window_height = 1080
+    browser.config.timeout = 6.0
+    browser.config.window_width = 412
+    browser.config.window_height = 914
 
     yield browser
 
