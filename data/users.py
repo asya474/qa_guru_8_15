@@ -12,7 +12,7 @@ class User:
     month_of_birth: str
     day_of_birth: str
     subject: str
-    hobbie: str
+    hobby: str
     image: str
     address: str
     state: str
