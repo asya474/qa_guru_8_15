@@ -2,7 +2,6 @@ import pytest
 from selene import browser
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-from selene import Browser, Config
 
 from utils import attach
 
@@ -20,7 +19,7 @@ def setup_browser(request):
     }
     options.capabilities.update(selenoid_capabilities)
     driver = webdriver.Remote(command_executor=f"https://user1:1234@selenoid.autotests.cloud/wd/hub", options=options)
-    browser.config.base_url = "https://demoqa.com"
+    browser.config.base_url = "https://www.tinkoff.ru/"
     browser.config.driver = driver
     browser.config.timeout = 6.0
     browser.config.window_width = 412
