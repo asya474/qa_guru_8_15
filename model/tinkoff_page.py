@@ -6,7 +6,7 @@ class TinkoffPage:
         browser.open('https://www.tinkoff.ru/')
 
     def tinkoff_black_button(self):
-        browser.element('ab3z6E84Q abYZE7Woe nb3z6E84Q rb3z6E84Q sb3z6E84Q').click()
+        browser.element('[href = "/cards/credit-cards/?internal_source=home_icon"]').click()
 
     def deposits_button(self):
         browser.element(by.text('Вклады')).click()
