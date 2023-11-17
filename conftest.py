@@ -38,8 +38,8 @@ from utils import attach
 def setup_browser(request):
     browser.config.base_url = 'https://www.tinkoff.ru/'
     browser.config.timeout = 10.0
-    browser.config.window_width = 900
-    browser.config.window_height = 600
+    browser.config.window_width = 1800
+    browser.config.window_height = 1200
 
     yield
 

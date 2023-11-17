@@ -5,42 +5,42 @@ class TinkoffPage:
     def open(self):
         browser.open('https://www.tinkoff.ru/')
 
-    def tinkoff_black_button(self):
+    def credit_cart_button(self):
         browser.element('[href = "/cards/credit-cards/?internal_source=home_icon"]').click()
 
     def deposits_button(self):
-        browser.element(by.text('Вклады')).click()
+        browser.element('[href = "/savings/deposit/?internal_source=home_icon"]').click()
 
     def investition_button(self):
-        browser.element('cbn4iE95H').click()
+        browser.element('[href = "/invest/?internal_source=home_icon"]').click()
 
     def insurance_button(self):
-        browser.element('cbn4iE95H').click()
+        browser.element('[href = "/insurance/?internal_source=home_icon"]').click()
 
     def travel_button(self):
-        browser.element('#cbn4iE95H').click()
+        browser.element('[href = "/travel/?internal_source=home_icon"]').click()
 
-    def go_to_tinkoff_black_button_page(self):
+    def go_to_credit_cart_button_page(self):
         browser.should(have.url_containing(
-            f'/cards/debit-cards/tinkoff-black/?internal_source=home_slider_block'
+            f'https://www.tinkoff.ru/cards/credit-cards/?internal_source=home_icon'
         ))
 
     def go_to_deposits_button_page(self):
         browser.should(have.url_containing(
-            f'/savings/deposit/?internal_source=home_icon'
+            f'https://www.tinkoff.ru/savings/deposit/?internal_source=home_icon'
         ))
 
     def go_to_investition_button_page(self):
         browser.should(have.url_containing(
-            f'/invest/?internal_source=home_icon'
+            f'https://www.tinkoff.ru/invest/?internal_source=home_icon'
         ))
 
     def go_to_insurance_button_page(self):
         browser.should(have.url_containing(
-            f'/insurance/?internal_source=home_icon'
+            f'https://www.tinkoff.ru/insurance/?internal_source=home_icon'
         ))
 
     def go_to_travel_button_page(self):
         browser.should(have.url_containing(
-            f'/travel/?internal_source=home_icon'
+            f'https://www.tinkoff.ru/travel/?internal_source=home_icon'
         ))
