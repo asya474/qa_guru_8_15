@@ -1,47 +1,41 @@
 from model.tinkoff_page import TinkoffPage
 import allure
-from selene import browser, be, have
 
 tinkoff_page = TinkoffPage()
 
 
 def test_debet_cart_tinkoff_black_button(setup_browser):
+    tinkoff_page.open()
     with allure.step("Нажать на кнопку"):
-        browser.element('#cbEZbIs7E').click()
+        tinkoff_page.tinkoff_black_button()
     with allure.step("Происходит переадресация на другую страницу"):
-        browser.should(have.url_containing(
-            f'/cards/debit-cards/tinkoff-black/?internal_source=home_slider_block'
-        ))
+        tinkoff_page.go_to_tinkoff_black_button_page()
 
 def test_deposits_button(setup_browser):
+    tinkoff_page.open()
     with allure.step("Нажать на кнопку"):
-        browser.element('#cbn4iE95H').click()
+        tinkoff_page.deposits_button()
     with allure.step("Происходит переадресация на другую страницу"):
-        browser.should(have.url_containing(
-            f'/savings/deposit/?internal_source=home_icon'
-        ))
+        tinkoff_page.go_to_deposits_button_page()
 
 def test_investition_button(setup_browser):
+    tinkoff_page.open()
     with allure.step("Нажать на кнопку"):
-        browser.element('#cbn4iE95H').click()
+        tinkoff_page.investition_button()
     with allure.step("Происходит переадресация на другую страницу"):
-        browser.should(have.url_containing(
-            f'/invest/?internal_source=home_icon'
-        ))
+        tinkoff_page.go_to_investition_button_page()
 
 def test_insurance_button(setup_browser):
+    tinkoff_page.open()
     with allure.step("Нажать на кнопку"):
-        browser.element('#cbn4iE95H').click()
+        tinkoff_page.insurance_button()
     with allure.step("Происходит переадресация на другую страницу"):
-        browser.should(have.url_containing(
-            f'/insurance/?internal_source=home_icon'
-        ))
+        tinkoff_page.go_to_insurance_button_page()
 
 def test_travel_button(setup_browser):
+    tinkoff_page.open()
     with allure.step("Нажать на кнопку"):
-        browser.element('#cbn4iE95H').click()
+        tinkoff_page.travel_button()
     with allure.step("Происходит переадресация на другую страницу"):
-        browser.should(have.url_containing(
-            f'/travel/?internal_source=home_icon'
-        ))
+        tinkoff_page.go_to_travel_button_page()
 

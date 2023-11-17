@@ -1,41 +1,46 @@
-from selene import browser, be, have
+from selene import browser, have, by
 
 
 class TinkoffPage:
     def open(self):
         browser.open('https://www.tinkoff.ru/')
 
-    def registration(self, guest):
-        browser.element('#firstName').type(guest.first_name)
-        browser.element('#lastName').type(guest.last_name)
-        browser.element('#userEmail').type(guest.email)
-        browser.element('#userNumber').type(guest.phone_number)
-        browser.element('label[for="gender-radio-3').click()
-        browser.element('#dateOfBirthInput').click()
-        browser.element('.react-datepicker__month-select').type(guest.month_of_birth)
-        browser.element('.react-datepicker__year-select').type(guest.year_of_birth)
-        browser.element(
-            f'.react-datepicker__day--0{guest.day_of_birth}:not(.react-datepicker__day--outside-month)'
-        ).click()
-        browser.element('#subjectsInput').type(guest.subject).press_enter()
-        #browser.element('#uploadPicture').should(be.visible).type(os.path.abspath("tests/hedgehog.jpg"))
-        browser.element('#uploadPicture').send_keys(image.path(guest.image))
-        browser.element('#currentAddress').type(guest.address)
-        browser.element('//*[@id="hobbiesWrapper"]/div[2]/div[2]/label').should(be.visible).with_(timeout=20).click()
-        browser.element('#react-select-3-input').type(guest.state).press_enter()
-        browser.element('#react-select-4-input').type(guest.city).press_enter()
-        browser.element('#submit').click()
+    def tinkoff_black_button(self):
+        browser.element('ab3z6E84Q abYZE7Woe nb3z6E84Q rb3z6E84Q sb3z6E84Q').click()
 
-    def student_should_be_registred(self, guest):
-        browser.all(".table-dark>tbody>tr>td:nth-child(2)").should(have.texts(
-            f'{guest.first_name} {guest.last_name}',
-            guest.email,
-            guest.gender,
-            guest.phone_number,
-            f'{guest.day_of_birth} {guest.month_of_birth},{guest.year_of_birth}',
-            guest.subject,
-            guest.hobby,
-            guest.image,
-            guest.address,
-            f'{guest.state} {guest.city}'
+    def deposits_button(self):
+        browser.element(by.text('Вклады')).click()
+
+    def investition_button(self):
+        browser.element('cbn4iE95H').click()
+
+    def insurance_button(self):
+        browser.element('cbn4iE95H').click()
+
+    def travel_button(self):
+        browser.element('#cbn4iE95H').click()
+
+    def go_to_tinkoff_black_button_page(self):
+        browser.should(have.url_containing(
+            f'/cards/debit-cards/tinkoff-black/?internal_source=home_slider_block'
+        ))
+
+    def go_to_deposits_button_page(self):
+        browser.should(have.url_containing(
+            f'/savings/deposit/?internal_source=home_icon'
+        ))
+
+    def go_to_investition_button_page(self):
+        browser.should(have.url_containing(
+            f'/invest/?internal_source=home_icon'
+        ))
+
+    def go_to_insurance_button_page(self):
+        browser.should(have.url_containing(
+            f'/insurance/?internal_source=home_icon'
+        ))
+
+    def go_to_travel_button_page(self):
+        browser.should(have.url_containing(
+            f'/travel/?internal_source=home_icon'
         ))
