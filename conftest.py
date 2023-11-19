@@ -21,9 +21,9 @@ def setup_browser(request):
     driver = webdriver.Remote(command_executor=f"https://user1:1234@selenoid.autotests.cloud/wd/hub", options=options)
     browser.config.base_url = "https://www.tinkoff.ru/"
     browser.config.driver = driver
-    browser.config.timeout = 6.0
-    browser.config.window_width = 412
-    browser.config.window_height = 914
+    browser.config.timeout = 10.0
+    browser.config.window_width = 400
+    browser.config.window_height = 800
 
     yield browser
 

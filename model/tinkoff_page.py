@@ -6,19 +6,19 @@ class TinkoffPage:
         browser.open('https://www.tinkoff.ru/')
 
     def credit_cart_button(self):
-        browser.element('[href = "/cards/credit-cards/?internal_source=home_icon"]').click()
+        browser.element('[href = "/cards/credit-cards/?internal_source=home_icon"]').press_enter()
 
     def deposits_button(self):
-        browser.element('[href = "/savings/deposit/?internal_source=home_icon"]').click()
+        browser.element('[href = "/savings/deposit/?internal_source=home_icon"]').press_enter()
 
     def investition_button(self):
-        browser.element('[href = "/invest/?internal_source=home_icon"]').click()
+        browser.element('[href = "/invest/?internal_source=home_icon"]').press_enter()
 
     def insurance_button(self):
-        browser.element('[href = "/insurance/?internal_source=home_icon"]').click()
+        browser.element('[href = "/insurance/?internal_source=home_icon"]').press_enter()
 
     def travel_button(self):
-        browser.element('[href = "/travel/?internal_source=home_icon"]').click()
+        browser.element('[href = "/travel/?internal_source=home_icon"]').press_enter()
 
     def go_to_credit_cart_button_page(self):
         browser.should(have.url_containing(
