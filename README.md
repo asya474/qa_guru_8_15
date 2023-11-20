@@ -68,11 +68,11 @@
 
 
 #### Общие результаты
-![This is an image](design/image/allure_report_overview.png)
+![This is an image](design/image/бщие_результаты.png)
 #### Список тест кейсов
-![This is an image](design/image/allure_report.png)
+![This is an image](design/image/список_тест_кейсов.png)
 #### Пример отчета о прохождении теста
-![This is an image](design/image/example_test_allure.png)
+![This is an image](design/image/пример_отчета_с_пройденным_кейсом.png)
 
 ----
 
