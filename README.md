@@ -44,7 +44,7 @@
 ----
 
 ### Запуск автотестов выполняется на сервере Jenkins
-> <a target="_blank" href="https://jenkins.autotests.cloud/job/OstrovokSiteAutoTest/">Ссылка на проект в Jenkins</a>
+> <a target="_blank" href="https://jenkins.autotests.cloud/job/TINKOFF_PROJECT/">Ссылка на проект в Jenkins</a>
 
 #### Параметры сборки
 
@@ -54,7 +54,7 @@
 
 #### Для запуска автотестов в Jenkins
 
-1. Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/OstrovokSiteAutoTest/">проект</a>
+1. Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/TINKOFF_PROJECT/">проект</a>
 2. Выбрать пункт `Build with Parameters`
 3. Выбрать окружение в выпадающем списке
 4. Указать комментарий
@@ -105,8 +105,3 @@
 ### Пример видео прохождения автотеста
 ![autotest_gif](design/image/autotest_gif.gif)
 
-----
-
-### Mind map тест плана
-
-![allure_reports_graphs](qa_guru_python_8_15/pictures/test-case-mind-map.png)
