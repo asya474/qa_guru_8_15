@@ -23,7 +23,23 @@
 
 ### Используемый стэк
 
-<img title="Python" src="qa_guru_python_8_15/pictures/icons/python-original.svg" height="40" width="40"/> <img title="Pytest" src="qa_guru_python_8_15/pictures/icons/pytest-original.svg" height="40" width="40"/> <img title="Jira" src="qa_guru_python_8_15/pictures/icons/jira-original.svg" height="40" width="40"/> <img title="Allure Report" src="qa_guru_python_8_15/pictures/icons/Allure_Report.png" height="40" width="40"/> <img title="Allure TestOps" src="qa_guru_python_8_15/pictures/icons/AllureTestOps.png" height="40" width="40"/> <img title="GitHub" src="qa_guru_python_8_15/pictures/icons/github-original.svg" height="40" width="40"/> <img title="Selenoid" src="qa_guru_python_8_15/pictures/icons/selenoid.png" height="40" width="40"/> <img title="Selenium" src="qa_guru_python_8_15/pictures/icons/selenium-original.svg" height="40" width="40"/> <img title="Selene" src="qa_guru_python_8_15/pictures/icons/selene.png" height="40" width="40"/> <img title="Pycharm" src="qa_guru_python_8_15/pictures/icons/pycharm.png" height="40" width="40"/> <img title="Telegram" src="qa_guru_python_8_15/pictures/icons/tg.png" height="40" width="40"/> <img title="Jenkins" src="qa_guru_python_8_15/pictures/icons/jenkins-original.svg" height="40" width="40"/>
+<table border="2">
+  <tbody>
+    <tr>
+        <td>Python</td>
+        <td>Pytest</td>
+        <td>Selene</td>
+        <td>Selenium</td>
+        <td>Selenoid</td>
+        <td>Jenkins</td>
+        <td>Allure Reports</td>
+        <td>Allure TestOps</td>
+        <td>Jira</td>
+    </tr>
+  </tbody>
+</table>
+
+<img src="design/icons/python-original.svg" width="50"> <img src="design/icons/pytest.png" width="50"> <img src="design/icons/intellij_pycharm.png" width="50"> <img src="design/icons/selene.png" width="50"> <img src="design/icons/selenium.png" width="50"> <img src="design/icons/selenoid.png" width="50"> <img src="design/icons/jenkins.png" width="50"> <img src="design/icons/allure_report.png" width="50"> <img src="design/icons/allure_testops.png" width="50"> <img src="design/icons/tg.png" width="50"> <img src="design/icons/jira.png" width="50">
 
 ----
 
