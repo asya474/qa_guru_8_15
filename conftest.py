@@ -6,7 +6,7 @@ from selenium.webdriver.chrome.options import Options
 from utils import attach
 
 
-@pytest.fixture(scope='session', autouse=True)
+@pytest.fixture(scope='function', autouse=True)
 def setup_browser(request):
     options = Options()
     selenoid_capabilities = {
@@ -19,11 +19,11 @@ def setup_browser(request):
     }
     options.capabilities.update(selenoid_capabilities)
     driver = webdriver.Remote(command_executor=f"https://user1:1234@selenoid.autotests.cloud/wd/hub", options=options)
-    browser.config.base_url = "https://www.tinkoff.ru/"
     browser.config.driver = driver
     browser.config.timeout = 10.0
-    browser.config.window_width = 1080
-    browser.config.window_height = 1920
+    browser.config.window_width = 1920
+    browser.config.window_height = 1080
+    browser.open('https://www.tinkoff.ru/')
 
     yield browser
 
