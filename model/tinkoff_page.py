@@ -2,8 +2,6 @@ from selene import browser, have, by
 
 
 class TinkoffPage:
-    def open(self):
-        browser.open('https://www.tinkoff.ru/')
 
     def credit_cart_button(self):
         browser.element('[href = "/cards/credit-cards/?internal_source=home_icon"]').press_enter()
