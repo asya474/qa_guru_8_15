@@ -43,96 +43,67 @@
 
 ----
 
-### Локальный запуск автотестов
-
-#### Выполнить в cli:
-> [!NOTE]
-> Ключ выбора версии `--browser-version` не обязателен
-```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-pytest . --browser-version=100
-```
-
-#### Получение отчёта:
-```bash
-allure serve build/allure-results
-```
-
-----
-
-### Проект в Jenkins
-> <a target="_blank" href="https://jenkins.autotests.cloud/job/Saber-Interactive-Auto-Tests/">Ссылка</a>
+### Запуск автотестов выполняется на сервере Jenkins
+> <a target="_blank" href="https://jenkins.autotests.cloud/job/OstrovokSiteAutoTest/">Ссылка на проект в Jenkins</a>
 
 #### Параметры сборки
-> [!NOTE]
-> Параметры сборки не обязательны
-```python
-BROWSER_VERSION = 100 # Версия браузера
-ENVIRONMENT = ['STAGE', 'PREPROD', 'PROD'] # Окружение
-COMMENT = 'some comment' # Комментарий
-```
-#### Запуск автотестов в Jenkins
-1. Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/Saber-Interactive-Auto-Tests/">проект</a>
 
-![jenkins project main page](qa_guru_python_8_15/pictures/jenkins_project_main_page.png)
+* `environment` - параметр определяет окружение для запуска тестов
+* `comment` - комментарий
 
-2. Нажать "Build with Parameters"
-3. В поле "BROWSER_VERSION" ввести: 100
-4. Из списка "ENVIRONMENT" выбрать: PROD
-5. В поле "COMMENT" ввести комментарий
-6. Нажать "Build"
 
-![jenkins_build](qa_guru_python_8_15/pictures/jenkins_build.png)
+#### Для запуска автотестов в Jenkins
+
+1. Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/OstrovokSiteAutoTest/">проект</a>
+2. Выбрать пункт `Build with Parameters`
+3. Выбрать окружение в выпадающем списке
+4. Указать комментарий
+5. Нажать кнопку `Build`
+6. Результат запуска сборки можно посмотреть в отчёте Allure
+
+![This is an image](design/image/jenkins_build.png)
 
 ----
-
 ### Allure отчет
-#### Общие результаты 
-![allure_report_overview](qa_guru_python_8_15/pictures/allure_report_overview.png)
 
-#### Результаты прохождения теста
-![allure_reports_behaviors](qa_guru_python_8_15/pictures/allure_reports_behaviors.png)
 
-#### Графики
-
-![allure_reports_graphs](qa_guru_python_8_15/pictures/alluere_reports_graphs_1.png)
-![allure_reports_graphs](qa_guru_python_8_15/pictures/alluere_reports_graphs_2.png)
+#### Общие результаты
+![This is an image](design/image/allure_report_overview.png)
+#### Список тест кейсов
+![This is an image](design/image/allure_report.png)
+#### Пример отчета о прохождении теста
+![This is an image](design/image/example_test_allure.png)
 
 ----
 
-### Интеграция с Allure TestOps
-> <a target="_blank" href="https://allure.autotests.cloud/project/3782/dashboards">Ссылка на проект</a>
+### Полная статистика по прохождению тестпланов, отчёты и приложения к ним хранятся в Allure TestOps
+> <a target="_blank" href="https://allure.autotests.cloud/project/3786/dashboards">Ссылка на проект в AllureTestOps</a> (запрос доступа `admin@qa.guru`)
 
-#### Дашборд с общими показателями тестовых прогонов
+#### Тест-планы проекта
+![This is an image](design/image/allure_TestOps_test_plans.png)
 
-![allure_test_ops_dashboards](qa_guru_python_8_15/pictures/allure_testops_dashboards.png)
+#### Общий список всех кейсов, имеющихся в системе (без разделения по тест-планам и виду выполнения тестирования)
+![This is an image](design/image/allure_TestOps_test_cases.png)
 
-#### История запуска тестовых наборов
+#### Пример отчёта выполнения одного из автотестов
+![This is an image](design/image/example_autotests_allure_TestOps.png)
 
-![allure_testops_launches](qa_guru_python_8_15/pictures/allure_testops_launches.png)
-
-#### Тест кейсы
-
-![allure_testops_suites](qa_guru_python_8_15/pictures/allure_testops_suites.png)
+#### Пример dashboard с общими результатами тестирования
+![This is an image](design/image/allure_TestOps_dashboard.png)
 
 ----
-
 ### Интеграция с Jira
-> <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-953">Ссылка на проект</a>
+> <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-955">Ссылка на проект в Jira</a>
 
-![jira_project](qa_guru_python_8_15/pictures/jira_project.png)
-
-----
-
-### Оповещения в Telegram
-![telegram_allert](qa_guru_python_8_15/pictures/telegram_allert.png)
+![This is an image](design/image/jira.png)
 
 ----
+### Оповещение о результатах прогона тестов в Telegram
+![This is an image](design/image/tg_notification.png)
 
-### Видео прохождения автотеста
-![autotest_gif](qa_guru_python_8_15/pictures/autotest.gif)
+----
+### Пример видео прохождения автотеста
+![autotest_gif](design/image/autotest_gif.gif)
 
 ----
 
