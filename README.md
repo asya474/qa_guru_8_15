@@ -68,11 +68,11 @@
 
 
 #### Общие результаты
-![This is an image](design/image/бщие_результаты.png)
+![This is an image](design/image/allure_common_results.png)
 #### Список тест кейсов
-![This is an image](design/image/список_тест_кейсов.png)
+![This is an image](design/image/allure_list_testcases.png)
 #### Пример отчета о прохождении теста
-![This is an image](design/image/пример_отчета_с_пройденным_кейсом.png)
+![This is an image](design/image/allure_one_testcase.png)
 
 ----
 
@@ -80,13 +80,13 @@
 > <a target="_blank" href="https://allure.autotests.cloud/launch/32422">Ссылка на проект в AllureTestOps</a> (запрос доступа `admin@qa.guru`)
 
 #### Общий список всех кейсов, имеющихся в системе (без разделения по тест-планам и виду выполнения тестирования)
-![This is an image](design/image/allure_TestOps_test_cases.png)
+![This is an image](design/image/allops_test_suites.png)
 
 #### Пример отчёта выполнения одного из автотестов
-![This is an image](design/image/example_autotests_allure_TestOps.png)
+![This is an image](design/image/allops_one_testcase.png)
 
 #### Пример dashboard с общими результатами тестирования
-![This is an image](design/image/allure_TestOps_dashboard.png)
+![This is an image](design/image/allops_dashboard.png)
 
 ----
 ### Интеграция с Jira
@@ -96,7 +96,7 @@
 
 ----
 ### Оповещение о результатах прогона тестов в Telegram
-![This is an image](design/image/tg_notification.png)
+![This is an image](design/image/telegram.png)
 
 ----
 ### Пример видео прохождения автотеста
