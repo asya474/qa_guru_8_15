@@ -100,5 +100,5 @@
 
 ----
 ### Пример видео прохождения автотеста
-![autotest_gif](design/image/autotest_gif.gif)
+![autotest_gif](design/image/video.gif)
 
