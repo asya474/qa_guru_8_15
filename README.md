@@ -68,19 +68,16 @@
 
 
 #### Общие результаты
-![This is an image](design/image/allure_report_overview.png)
+![This is an image](design/image/бщие_результаты.png)
 #### Список тест кейсов
-![This is an image](design/image/allure_report.png)
+![This is an image](design/image/список_тест_кейсов.png)
 #### Пример отчета о прохождении теста
-![This is an image](design/image/example_test_allure.png)
+![This is an image](design/image/пример_отчета_с_пройденным_кейсом.png)
 
 ----
 
 ### Полная статистика по прохождению тестпланов, отчёты и приложения к ним хранятся в Allure TestOps
 > <a target="_blank" href="https://allure.autotests.cloud/launch/32422">Ссылка на проект в AllureTestOps</a> (запрос доступа `admin@qa.guru`)
-
-#### Тест-планы проекта
-![This is an image](design/image/allure_TestOps_test_plans.png)
 
 #### Общий список всех кейсов, имеющихся в системе (без разделения по тест-планам и виду выполнения тестирования)
 ![This is an image](design/image/allure_TestOps_test_cases.png)
@@ -93,7 +90,7 @@
 
 ----
 ### Интеграция с Jira
-> <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-955">Ссылка на проект в Jira</a>
+> <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-969">Ссылка на проект в Jira</a>
 
 ![This is an image](design/image/jira.png)
 
